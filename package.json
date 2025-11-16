@@ -6,14 +6,19 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{astro,js,ts,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{astro,js,ts,css,md}\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
-    "astro": "^5.15.6",
+    "astro": "^5.15.8",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "daisyui": "^5.5.4"
+    "daisyui": "^5.5.5"
   }
 }
